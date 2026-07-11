@@ -76,47 +76,7 @@
     </header>
 
     <main>
-      <section class="content-section skills-section" aria-labelledby="skills-heading">
-        <div class="section-heading">
-          <h2 id="skills-heading">Skills &amp; Certifications</h2>
-        </div>
-
-        <article class="card skill-card">
-          <div class="chip-list" aria-label="Skills and certifications">
-            <span>Linux</span>
-            <span>Python</span>
-            <span>Flask</span>
-            <span>Scikit-learn</span>
-            <span>Java</span>
-            <span>C++</span>
-            <span>R</span>
-            <span>Bayesian modeling</span>
-            <span>ggplot2</span>
-            <span>JavaScript</span>
-            <span>Node.js</span>
-            <span>Express</span>
-            <span>React</span>
-            <span>Ajax/jQuery</span>
-            <span>SQL</span>
-            <span>MySQL</span>
-            <span>MariaDB</span>
-            <span>Git/GitHub</span>
-            <span>Arduino</span>
-            <span>Raspberry Pi</span>
-            <span>Microsoft 365</span>
-            <span>Excel</span>
-            <span>PowerPoint</span>
-            <span>Word</span>
-            <span>Power BI</span>
-            <span>Project</span>
-            <span>ANSYS Lumerical</span>
-            <span>Tidy3D FDTD</span>
-            <span>GIAC SEC275</span>
-            <span>GIAC SEC401</span>
-          </div>
-        </article>
-      </section>
-
+    <main>
       <section class="content-section" aria-labelledby="research-heading">
         <div class="section-heading">
           <h2 id="research-heading">Research / Projects</h2>
@@ -127,7 +87,42 @@
             <div class="card-kicker">Lawrence Berkeley National Laboratory &middot; Summer 2026</div>
             <h3>FUSE Internship</h3>
             <p class="status-pill">In progress</p>
-            <p class="card-desc">Project: &ldquo;Merging lead-halide perovskites with quantum metaphotonics: achieving few-to-single photon super-radiance and exploring their resonantly-boosted quantum photo-physics.&rdquo;</p>
+            <ul class="detail-list">
+              <li>Project: Merging lead-halide perovskites with quantum metaphotonics: achieving few-to-single photon super-radiance.</li>
+              <li>Metasurface simulation and topology optimization via FDTD Lumerical and Tidy3D &mdash; new designs submitted to fabrication.</li>
+              <li>EM-JEPA research: accelerating electromagnetic FDTD simulation for inverse design by evolving 2D and 3D latents.</li>
+              <li>Developed Hyperspec: an H5 mapping visualizer for hyperspectral Raman mapping data with building-wide adoption, integrated into the LBL Crucible platform.</li>
+            </ul>
+            <div class="inline-links">
+              <a class="btn-link" href="https://github.com/qilsklo-lawrence/hyperspec" target="_blank" rel="noopener noreferrer" aria-label="Hyperspec GitHub Repository">
+                <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24">
+                  <path d="M12 .7a11.3 11.3 0 0 0-3.6 22c.6.1.8-.2.8-.6v-2c-3.3.7-4-1.4-4-1.4-.5-1.3-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 .1.9 1.9 2.5 1.4.1-.7.4-1.2.7-1.5-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17 4.9 18 5.2 18 5.2c.6 1.6.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.2c0 .4.2.7.8.6A11.3 11.3 0 0 0 12 .7Z"></path>
+                </svg>
+                Hyperspec
+              </a>
+              <a class="btn-link" href="https://github.com/qilsklo-lawrence/em-jepa" target="_blank" rel="noopener noreferrer" aria-label="EM-JEPA GitHub Repository">
+                <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24">
+                  <path d="M12 .7a11.3 11.3 0 0 0-3.6 22c.6.1.8-.2.8-.6v-2c-3.3.7-4-1.4-4-1.4-.5-1.3-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 .1.9 1.9 2.5 1.4.1-.7.4-1.2.7-1.5-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17 4.9 18 5.2 18 5.2c.6 1.6.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.2c0 .4.2.7.8.6A11.3 11.3 0 0 0 12 .7Z"></path>
+                </svg>
+                EM-JEPA
+              </a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-kicker">Independent Open Source &middot; Summer 2026</div>
+            <h3>Howdy-WebAuthn</h3>
+            <ul class="detail-list">
+              <li>Discovered passkey authentication insecurity for Linux endpoints at LBNL; forked Howdy codebase.</li>
+              <li>Authored open-source contribution (pending PR) adding Windows Hello-like WebAuthn passkey authentication on Linux (Fable 5).</li>
+              <li>Replaced heavy dlib dependency with ONNX runtime to support AMD Radeon iGPUs, enabling hardware-accelerated deep neural network face ID and presentation attack detection (anti-spoofing).</li>
+            </ul>
+            <a class="btn-link" href="https://github.com/qilsklo/howdy" target="_blank" rel="noopener noreferrer" aria-label="Howdy GitHub Repository">
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24">
+                <path d="M12 .7a11.3 11.3 0 0 0-3.6 22c.6.1.8-.2.8-.6v-2c-3.3.7-4-1.4-4-1.4-.5-1.3-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 .1.9 1.9 2.5 1.4.1-.7.4-1.2.7-1.5-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17 4.9 18 5.2 18 5.2c.6 1.6.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.2c0 .4.2.7.8.6A11.3 11.3 0 0 0 12 .7Z"></path>
+              </svg>
+              howdy
+            </a>
           </article>
 
           <article class="card">
@@ -169,16 +164,27 @@
 
         <div class="card-grid">
           <article class="card">
-            <div class="card-kicker">UC Berkeley CalSol &middot; 2025-2026</div>
-            <h3>Solar Vehicle Club, Battery / Electrical / Strategy</h3>
+            <div class="card-kicker">UC Berkeley CalSol Solar Vehicle Club &middot; 2025 &ndash; Present</div>
+            <h3>Battery / Electrical / Strategy</h3>
             <ul class="detail-list">
-              <li>Built State of Charge estimator from scaled per-cell current test data.</li>
-              <li>Used Kalman filtering, Coulomb counting, and cell voltage.</li>
-              <li>Contributed to American Solar Challenge race work.</li>
-              <li>Built LangGraph/LangChain LLM RAG combining Slack, Confluence, and Wiki data for troubleshooting and pedagogy.</li>
-              <li>Built blockchain/XRP asset manager for major vehicle revisions using Merkle roots and fast .aasx export.</li>
-              <li>$3k grant.</li>
+              <li>Conducted cell testing and built a State of Charge (SoC) estimator based on Kalman filtering, Coulomb counts, and cell voltages; project was a critical part of Summer 2026 race strategy.</li>
+              <li>Built a LangGraph/LangChain-based LLM RAG agent combining Slack, Confluence, and Wiki data sources to accelerate troubleshooting during/after road tests and improve knowledge transfer.</li>
+              <li>Developed a blockchain asset manager to store major vehicle revisions, funded by a $3k UC Berkeley grant and supporting `.aasx` file export.</li>
             </ul>
+            <div class="inline-links">
+              <a class="btn-link" href="https://github.com/qilsklo/soc" target="_blank" rel="noopener noreferrer" aria-label="State of Charge GitHub Repository">
+                <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24">
+                  <path d="M12 .7a11.3 11.3 0 0 0-3.6 22c.6.1.8-.2.8-.6v-2c-3.3.7-4-1.4-4-1.4-.5-1.3-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 .1.9 1.9 2.5 1.4.1-.7.4-1.2.7-1.5-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17 4.9 18 5.2 18 5.2c.6 1.6.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.2c0 .4.2.7.8.6A11.3 11.3 0 0 0 12 .7Z"></path>
+                </svg>
+                soc
+              </a>
+              <a class="btn-link" href="https://github.com/qilsklo/calsol-blockchain" target="_blank" rel="noopener noreferrer" aria-label="CalSol Blockchain GitHub Repository">
+                <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24">
+                  <path d="M12 .7a11.3 11.3 0 0 0-3.6 22c.6.1.8-.2.8-.6v-2c-3.3.7-4-1.4-4-1.4-.5-1.3-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 .1.9 1.9 2.5 1.4.1-.7.4-1.2.7-1.5-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17 4.9 18 5.2 18 5.2c.6 1.6.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.2c0 .4.2.7.8.6A11.3 11.3 0 0 0 12 .7Z"></path>
+                </svg>
+                calsol-blockchain
+              </a>
+            </div>
           </article>
 
           <article class="card">
@@ -206,9 +212,23 @@
               <li>Top 20/2,000 in US.</li>
               <li>Engineered Linux OS security scripts in Bash/Python.</li>
               <li>2023 and 2024 National Cyber Scholar with Honors.</li>
-              <li>Top 3% of competitors.</li>
               <li>$12,000 SANS GFACT cybersecurity training award.</li>
             </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-kicker">CP Admissions &middot; Summer 2025</div>
+            <h3>Teaching Assistant &amp; Developer</h3>
+            <ul class="detail-list">
+              <li>Taught high school students SAT Math and Reading.</li>
+              <li>Developed NFCClock: a web application that automates TA timesheet and payroll processing via smartphone NFC taps, backed by a MySQL database.</li>
+            </ul>
+            <a class="btn-link" href="https://github.com/qilsklo/nfcclock" target="_blank" rel="noopener noreferrer" aria-label="NFCClock GitHub Repository">
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24">
+                <path d="M12 .7a11.3 11.3 0 0 0-3.6 22c.6.1.8-.2.8-.6v-2c-3.3.7-4-1.4-4-1.4-.5-1.3-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 .1.9 1.9 2.5 1.4.1-.7.4-1.2.7-1.5-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17 4.9 18 5.2 18 5.2c.6 1.6.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.2c0 .4.2.7.8.6A11.3 11.3 0 0 0 12 .7Z"></path>
+              </svg>
+              nfcclock
+            </a>
           </article>
         </div>
       </section>

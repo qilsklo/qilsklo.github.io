@@ -392,6 +392,42 @@ main {
   margin-top: 0;
 }
 
+.btn-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: fit-content;
+  margin-top: 1rem;
+  padding: 0.45rem 0.95rem;
+  border: 1px solid var(--card-border);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.035);
+  color: var(--text-main);
+  font-size: 0.85rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 
+    background 0.25s ease,
+    border-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.btn-link svg {
+  fill: currentColor;
+}
+
+.btn-link:hover {
+  background: rgba(217, 79, 48, 0.08);
+  border-color: var(--card-border-strong);
+  color: var(--accent-soft);
+  transform: translateY(-2px);
+}
+
+.inline-links .btn-link {
+  margin-top: 0;
+}
+
 .link-card {
   display: block;
   color: inherit;
